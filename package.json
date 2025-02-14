@@ -1,7 +1,7 @@
 {
   "name": "hyper-tips",
-  "description": "Auto-generated from `~/.hyper.js`!",
-  "private": true,
+  "description": "Transparent panel with your favourite commands right on Hyper terminal window",
+  "private": false,
   "version": "0.0.1",
   "repository": "rightjelkin/hyper-tips",
   "license": "MIT"

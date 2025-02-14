@@ -2,10 +2,10 @@ const { app, BrowserWindow, globalShortcut } = require('electron')
 const fs = require('fs')
 const path = require('path')
 
-const getTipsOpacity = () => app.config.getConfig().tipsOpacity || '0.3'
-const getTipsPath = () => app.config.getConfig().tipsPath || path.join(process.env['HOME'], '.hyper-tips')
+const getTipsOpacity = () => app.config.getConfig().tips.opacity || '0.3'
+const getTipsPath = () => app.config.getConfig().tips.path || path.join(process.env['HOME'], '.hyper-tips')
 const getContent = () => fs.readFileSync(getTipsPath()).toString().split('\n')
-const getKey = () => app.config.getConfig().toggleTipsKey || 'cmd+alt+t'
+const getKey = () => app.config.getConfig().tips.toggleKey || 'cmd+alt+t'
 
 const toggleTips = () => {
     const w = BrowserWindow.getFocusedWindow()
