@@ -1,8 +1,15 @@
 {
   "name": "hyper-tips",
+  "version": "1.0.0",
+  "keywords": [
+    "hyper.app",
+    "hyper",
+    "hyperterm"
+  ],
+  "author": "Roman Galkin",
   "description": "Transparent panel with your favourite commands right on Hyper terminal window",
+  "main": "index.js",
   "private": false,
-  "version": "0.0.1",
   "repository": "rightjelkin/hyper-tips",
   "license": "MIT"
 }
